@@ -1,4 +1,5 @@
 import itertools
+from typing import List
 
 
 def transpose(text: str) -> str:
@@ -34,7 +35,7 @@ def transpose_(lines: str) -> str:
     return '\n'.join(result)
 
 
-def pad_lines(lines: [str], max_length: int) -> [str]:
+def pad_lines(lines: List[str], max_length: int) -> List[str]:
     result = []
     for line in lines[:-1]:
         padding_length = max_length - len(line)
